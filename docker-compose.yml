@@ -1,0 +1,124 @@
+services:
+  # Bootstrap service for generating node keys and principals
+  bootstrap:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: power-logger:latest
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./devices.yaml:/app/devices.yaml:ro
+      - ./script:/app/script:ro
+    environment:
+      - IC_URL=https://ic0.app
+
+
+    command: /bin/sh -c "echo 'Bootstrap image built successfully'"
+
+  # Node 1
+  node1:
+    image: power-logger:latest
+    container_name: power-node-1
+    networks:
+      - power-network
+    ports:
+      - "33334:33360"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./devices.yaml:/app/devices.yaml:ro
+      - ./nodes/node1/data:/app/data
+      - ./nodes/node1/logs:/app/logs
+      - ./nodes/node1/node_private_key.bin:/app/node_private_key.bin
+      - ./nodes/node1/node_principal.txt:/app/node_principal.txt
+    environment:
+      - NODE_ID=1
+      - NODE_NAME=PowerNode1
+      - RUST_LOG=info
+      - RUST_LOG=debug
+      - RUST_BACKTRACE=1
+      - IC_URL=https://ic0.app
+
+    depends_on:
+      - bootstrap
+
+  # Node 2
+  node2:
+    image: power-logger:latest
+    container_name: power-node-2
+    networks:
+      - power-network
+    ports:
+      - "33335:33361"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./devices.yaml:/app/devices.yaml:ro
+      - ./nodes/node2/data:/app/data
+      - ./nodes/node2/logs:/app/logs
+      - ./nodes/node2/node_private_key.bin:/app/node_private_key.bin
+      - ./nodes/node2/node_principal.txt:/app/node_principal.txt
+    environment:
+      - NODE_ID=2
+      - NODE_NAME=PowerNode2
+      - RUST_LOG=info
+      - RUST_LOG=debug
+      - RUST_BACKTRACE=1
+      - IC_URL=https://ic0.app
+
+    depends_on:
+      - bootstrap
+
+  # Node 3
+  node3:
+    image: power-logger:latest
+    container_name: power-node-3
+    networks:
+      - power-network
+    ports:
+      - "33336:33362"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./devices.yaml:/app/devices.yaml:ro
+      - ./nodes/node3/data:/app/data
+      - ./nodes/node3/logs:/app/logs
+      - ./nodes/node3/node_private_key.bin:/app/node_private_key.bin
+      - ./nodes/node3/node_principal.txt:/app/node_principal.txt
+    environment:
+      - NODE_ID=3
+      - NODE_NAME=PowerNode3
+      - RUST_LOG=info
+      - RUST_LOG=debug
+      - RUST_BACKTRACE=1
+      - IC_URL=https://ic0.app
+
+    depends_on:
+      - bootstrap
+
+  # Node 4
+  node4:
+    image: power-logger:latest
+    container_name: power-node-4
+    networks:
+      - power-network
+    ports:
+      - "33337:33363"
+    volumes:
+      - ./config.yaml:/app/config.yaml:ro
+      - ./devices.yaml:/app/devices.yaml:ro
+      - ./nodes/node4/data:/app/data
+      - ./nodes/node4/logs:/app/logs
+      - ./nodes/node4/node_private_key.bin:/app/node_private_key.bin
+      - ./nodes/node4/node_principal.txt:/app/node_principal.txt
+    environment:
+      - NODE_ID=4
+      - NODE_NAME=PowerNode4
+      - RUST_LOG=info
+      - RUST_LOG=debug
+      - RUST_BACKTRACE=1
+      - IC_URL=https://ic0.app
+
+    depends_on:
+      - bootstrap
+      
+networks:
+  power-network:
+    driver: bridge 

@@ -1,0 +1,479 @@
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [node5 internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.63kB done
+#1 DONE 0.0s
+
+#2 [ic-canister internal] load build definition from Dockerfile
+#2 transferring dockerfile: 932B done
+#2 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+#2 DONE 0.0s
+
+#3 [node1 internal] load build definition from Dockerfile
+#3 transferring dockerfile: 1.63kB done
+#3 DONE 0.1s
+
+#4 [node10 internal] load build definition from Dockerfile
+#4 transferring dockerfile: 1.63kB done
+#4 DONE 0.1s
+
+#5 [node2 internal] load build definition from Dockerfile
+#5 transferring dockerfile: 1.63kB done
+#5 DONE 0.0s
+
+#6 [node7 internal] load build definition from Dockerfile
+#6 transferring dockerfile: 1.63kB done
+#6 DONE 0.0s
+
+#7 [node4 internal] load build definition from Dockerfile
+#7 transferring dockerfile: 1.63kB done
+#7 DONE 0.0s
+
+#8 [node6 internal] load build definition from Dockerfile
+#8 transferring dockerfile: 1.63kB done
+#8 DONE 0.1s
+
+#9 [node8 internal] load build definition from Dockerfile
+#9 transferring dockerfile: 1.63kB done
+#9 DONE 0.1s
+
+#10 [node3 internal] load build definition from Dockerfile
+#10 transferring dockerfile: 1.63kB done
+#10 DONE 0.1s
+
+#11 [node9 internal] load build definition from Dockerfile
+#11 transferring dockerfile: 1.63kB done
+#11 DONE 0.0s
+
+#12 [node3 internal] load metadata for docker.io/library/debian:bullseye-slim
+#12 DONE 0.9s
+
+#13 [node6 internal] load metadata for docker.io/library/rust:latest
+#13 DONE 0.9s
+
+#14 [node8 internal] load .dockerignore
+#14 transferring context: 126B done
+#14 DONE 0.0s
+
+#15 [node7 internal] load .dockerignore
+#15 transferring context: 126B done
+#15 DONE 0.0s
+
+#16 [node9 internal] load .dockerignore
+#16 transferring context: 126B done
+#16 DONE 0.0s
+
+#17 [node4 internal] load .dockerignore
+#17 transferring context: 126B done
+#17 DONE 0.0s
+
+#18 [node2 internal] load .dockerignore
+#18 transferring context: 126B done
+#18 DONE 0.0s
+
+#19 [node5 internal] load .dockerignore
+#19 transferring context: 126B done
+#19 DONE 0.0s
+
+#20 [node3 internal] load .dockerignore
+#20 transferring context: 126B done
+#20 DONE 0.0s
+
+#21 [node1 internal] load .dockerignore
+#21 transferring context: 126B done
+#21 DONE 0.1s
+
+#22 [ic-canister internal] load metadata for docker.io/library/rust:1.75-slim
+#22 DONE 1.0s
+
+#23 [node10 internal] load .dockerignore
+#23 transferring context: 126B done
+#23 DONE 0.1s
+
+#24 [node6 internal] load .dockerignore
+#24 transferring context: 126B done
+#24 DONE 0.1s
+
+#25 [node6 stage-1 1/6] FROM docker.io/library/debian:bullseye-slim@sha256:7aafeb23eaef5d5b1de26e967b9a78f018baaac81dd75246b99781eaaa2d59ef
+#25 resolve docker.io/library/debian:bullseye-slim@sha256:7aafeb23eaef5d5b1de26e967b9a78f018baaac81dd75246b99781eaaa2d59ef 0.0s done
+#25 CACHED
+
+#26 [node6 builder  1/14] FROM docker.io/library/rust:latest@sha256:7b65306dd21304f48c22be08d6a3e41001eef738b3bd3a5da51119c802321883
+#26 resolve docker.io/library/rust:latest@sha256:7b65306dd21304f48c22be08d6a3e41001eef738b3bd3a5da51119c802321883 0.0s done
+#26 CACHED
+
+#27 [ic-canister internal] load .dockerignore
+#27 transferring context: 2B done
+#27 DONE 0.0s
+
+#28 [node6 builder  2/14] RUN apt-get update && apt-get install -y --no-install-recommends     build-essential     ca-certificates     cmake     git     libssl-dev     pkg-config &&     rm -rf /var/lib/apt/lists/*
+#28 ...
+
+#25 [ic-canister stage-1 1/6] FROM docker.io/library/debian:bullseye-slim@sha256:7aafeb23eaef5d5b1de26e967b9a78f018baaac81dd75246b99781eaaa2d59ef
+#25 resolve docker.io/library/debian:bullseye-slim@sha256:7aafeb23eaef5d5b1de26e967b9a78f018baaac81dd75246b99781eaaa2d59ef 0.0s done
+#25 CACHED
+
+#29 [node9 internal] load build context
+#29 transferring context: 10.38kB 0.0s done
+#29 DONE 0.0s
+
+#30 [node3 internal] load build context
+#30 transferring context: 10.38kB done
+#30 DONE 0.0s
+
+#31 [node5 internal] load build context
+#31 transferring context: 10.38kB done
+#31 DONE 0.1s
+
+#32 [node7 internal] load build context
+#32 transferring context: 10.38kB done
+#32 DONE 0.1s
+
+#33 [node2 internal] load build context
+#33 transferring context: 10.38kB 0.0s done
+#33 DONE 0.1s
+
+#34 [ic-canister builder 1/5] FROM docker.io/library/rust:1.75-slim@sha256:70c2a016184099262fd7cee46f3d35fec3568c45c62f87e37f7f665f766b1f74
+#34 resolve docker.io/library/rust:1.75-slim@sha256:70c2a016184099262fd7cee46f3d35fec3568c45c62f87e37f7f665f766b1f74 0.0s done
+#34 CACHED
+
+#35 [node4 internal] load build context
+#35 transferring context: 10.38kB done
+#35 DONE 0.1s
+
+#36 [node8 internal] load build context
+#36 transferring context: 10.38kB done
+#36 DONE 0.1s
+
+#37 [node1 internal] load build context
+#37 transferring context: 10.38kB done
+#37 DONE 0.1s
+
+#38 [node6 internal] load build context
+#38 transferring context: 10.38kB done
+#38 DONE 0.2s
+
+#39 [node10 internal] load build context
+#39 transferring context: 10.38kB 0.0s done
+#39 DONE 0.2s
+
+#40 [node6 stage-1 2/6] RUN apt-get update && apt-get install -y --no-install-recommends     libssl-dev     ca-certificates &&     rm -rf /var/lib/apt/lists/*
+#40 ...
+
+#41 [ic-canister internal] load build context
+#41 transferring context: 3.01MB 0.5s done
+#41 DONE 0.5s
+
+#40 [node6 stage-1 2/6] RUN apt-get update && apt-get install -y --no-install-recommends     libssl-dev     ca-certificates &&     rm -rf /var/lib/apt/lists/*
+#40 0.579 Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+#40 1.047 Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [27.2 kB]
+#40 1.205 Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+#40 1.363 Get:4 http://deb.debian.org/debian bullseye/main arm64 Packages [7955 kB]
+#40 ...
+
+#42 [ic-canister builder 2/5] RUN apt-get update && apt-get install -y     pkg-config     libssl-dev     && rm -rf /var/lib/apt/lists/*
+#42 0.528 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#42 0.922 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#42 1.306 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#42 1.690 Get:4 http://deb.debian.org/debian bookworm/main arm64 Packages [8692 kB]
+#42 ...
+
+#43 [ic-canister stage-1 2/3] RUN apt-get update && apt-get install -y     ca-certificates     && rm -rf /var/lib/apt/lists/*
+#43 0.539 Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
+#43 1.007 Get:2 http://deb.debian.org/debian-security bullseye-security InRelease [27.2 kB]
+#43 1.186 Get:3 http://deb.debian.org/debian bullseye-updates InRelease [44.1 kB]
+#43 1.336 Get:4 http://deb.debian.org/debian bullseye/main arm64 Packages [7955 kB]
+#43 ...
+
+#28 [node6 builder  2/14] RUN apt-get update && apt-get install -y --no-install-recommends     build-essential     ca-certificates     cmake     git     libssl-dev     pkg-config &&     rm -rf /var/lib/apt/lists/*
+#28 0.643 Get:1 http://deb.debian.org/debian bookworm InRelease [151 kB]
+#28 1.051 Get:2 http://deb.debian.org/debian bookworm-updates InRelease [55.4 kB]
+#28 1.215 Get:3 http://deb.debian.org/debian-security bookworm-security InRelease [48.0 kB]
+#28 1.373 Get:4 http://deb.debian.org/debian bookworm/main arm64 Packages [8692 kB]
+#28 ...
+
+#43 [ic-canister stage-1 2/3] RUN apt-get update && apt-get install -y     ca-certificates     && rm -rf /var/lib/apt/lists/*
+#43 45.10 Get:5 http://deb.debian.org/debian-security bullseye-security/main arm64 Packages [354 kB]
+#43 46.32 Get:6 http://deb.debian.org/debian bullseye-updates/main arm64 Packages [16.3 kB]
+#43 46.37 Fetched 8513 kB in 46s (185 kB/s)
+#43 46.37 Reading package lists...
+#43 46.60 Reading package lists...
+#43 46.81 Building dependency tree...
+#43 46.87 Reading state information...
+#43 46.93 The following additional packages will be installed:
+#43 46.93   openssl
+#43 46.94 The following NEW packages will be installed:
+#43 46.94   ca-certificates openssl
+#43 47.17 0 upgraded, 2 newly installed, 0 to remove and 2 not upgraded.
+#43 47.17 Need to get 995 kB of archives.
+#43 47.17 After this operation, 1874 kB of additional disk space will be used.
+#43 47.17 Get:1 http://deb.debian.org/debian-security bullseye-security/main arm64 openssl arm64 1.1.1w-0+deb11u2 [837 kB]
+#43 50.88 Get:2 http://deb.debian.org/debian bullseye/main arm64 ca-certificates all 20210119 [158 kB]
+#43 51.89 debconf: delaying package configuration, since apt-utils is not installed
+#43 51.90 Fetched 995 kB in 5s (206 kB/s)
+#43 51.91 Selecting previously unselected package openssl.
+#43 51.91 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6665 files and directories currently installed.)
+#43 51.93 Preparing to unpack .../openssl_1.1.1w-0+deb11u2_arm64.deb ...
+#43 51.93 Unpacking openssl (1.1.1w-0+deb11u2) ...
+#43 51.99 Selecting previously unselected package ca-certificates.
+#43 51.99 Preparing to unpack .../ca-certificates_20210119_all.deb ...
+#43 51.99 Unpacking ca-certificates (20210119) ...
+#43 52.01 Setting up openssl (1.1.1w-0+deb11u2) ...
+#43 52.01 Setting up ca-certificates (20210119) ...
+#43 52.07 debconf: unable to initialize frontend: Dialog
+#43 52.07 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#43 52.07 debconf: falling back to frontend: Readline
+#43 52.07 debconf: unable to initialize frontend: Readline
+#43 52.07 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.32.1 /usr/local/share/perl/5.32.1 /usr/lib/aarch64-linux-gnu/perl5/5.32 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.32 /usr/share/perl/5.32 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+#43 52.07 debconf: falling back to frontend: Teletype
+#43 52.20 Updating certificates in /etc/ssl/certs...
+#43 52.38 129 added, 0 removed; done.
+#43 52.39 Processing triggers for ca-certificates (20210119) ...
+#43 52.39 Updating certificates in /etc/ssl/certs...
+#43 52.52 0 added, 0 removed; done.
+#43 52.52 Running hooks in /etc/ca-certificates/update.d...
+#43 52.52 done.
+#43 DONE 52.6s
+
+#40 [node6 stage-1 2/6] RUN apt-get update && apt-get install -y --no-install-recommends     libssl-dev     ca-certificates &&     rm -rf /var/lib/apt/lists/*
+#40 46.81 Get:5 http://deb.debian.org/debian-security bullseye-security/main arm64 Packages [354 kB]
+#40 48.34 Get:6 http://deb.debian.org/debian bullseye-updates/main arm64 Packages [16.3 kB]
+#40 48.42 Fetched 8513 kB in 48s (177 kB/s)
+#40 48.42 Reading package lists...
+#40 48.66 Reading package lists...
+#40 48.87 Building dependency tree...
+#40 48.92 Reading state information...
+#40 48.98 The following additional packages will be installed:
+#40 48.98   openssl
+#40 48.98 Suggested packages:
+#40 48.98   libssl-doc
+#40 48.99 The following NEW packages will be installed:
+#40 48.99   ca-certificates libssl-dev openssl
+#40 49.18 0 upgraded, 3 newly installed, 0 to remove and 2 not upgraded.
+#40 49.18 Need to get 2696 kB of archives.
+#40 49.18 After this operation, 9791 kB of additional disk space will be used.
+#40 49.18 Get:1 http://deb.debian.org/debian-security bullseye-security/main arm64 openssl arm64 1.1.1w-0+deb11u2 [837 kB]
+#40 51.96 Get:2 http://deb.debian.org/debian bullseye/main arm64 ca-certificates all 20210119 [158 kB]
+#40 52.55 Get:3 http://deb.debian.org/debian-security bullseye-security/main arm64 libssl-dev arm64 1.1.1w-0+deb11u2 [1701 kB]
+#40 ...
+
+#28 [node6 builder  2/14] RUN apt-get update && apt-get install -y --no-install-recommends     build-essential     ca-certificates     cmake     git     libssl-dev     pkg-config &&     rm -rf /var/lib/apt/lists/*
+#28 53.01 Get:5 http://deb.debian.org/debian bookworm-updates/main arm64 Packages [512 B]
+#28 53.07 Get:6 http://deb.debian.org/debian-security bookworm-security/main arm64 Packages [253 kB]
+#28 54.91 Fetched 9200 kB in 55s (169 kB/s)
+#28 54.91 Reading package lists...
+#28 55.17 Reading package lists...
+#28 55.40 Building dependency tree...
+#28 55.46 Reading state information...
+#28 55.53 ca-certificates is already the newest version (20230311).
+#28 55.53 git is already the newest version (1:2.39.5-0+deb12u2).
+#28 55.53 libssl-dev is already the newest version (3.0.15-1~deb12u1).
+#28 55.53 pkg-config is already the newest version (1.8.1-1).
+#28 55.53 pkg-config set to manually installed.
+#28 55.53 The following additional packages will be installed:
+#28 55.53   cmake-data libarchive13 libjsoncpp25 librhash0 libuv1
+#28 55.53 Suggested packages:
+#28 55.53   cmake-doc cmake-format elpa-cmake-mode ninja-build lrzip
+#28 55.56 The following NEW packages will be installed:
+#28 55.56   build-essential cmake cmake-data libarchive13 libjsoncpp25 librhash0 libuv1
+#28 55.82 0 upgraded, 7 newly installed, 0 to remove and 5 not upgraded.
+#28 55.82 Need to get 9490 kB of archives.
+#28 55.82 After this operation, 38.0 MB of additional disk space will be used.
+#28 55.82 Get:1 http://deb.debian.org/debian bookworm/main arm64 build-essential arm64 12.9 [7704 B]
+#28 55.89 Get:2 http://deb.debian.org/debian bookworm/main arm64 libarchive13 arm64 3.6.2-1+deb12u2 [316 kB]
+#28 56.55 Get:3 http://deb.debian.org/debian bookworm/main arm64 libjsoncpp25 arm64 1.9.5-4 [72.3 kB]
+#28 56.69 Get:4 http://deb.debian.org/debian bookworm/main arm64 librhash0 arm64 1.4.3-3 [131 kB]
+#28 56.95 Get:5 http://deb.debian.org/debian bookworm/main arm64 libuv1 arm64 1.44.2-1+deb12u1 [130 kB]
+#28 57.17 Get:6 http://deb.debian.org/debian bookworm/main arm64 cmake-data all 3.25.1-1 [2026 kB]
+#28 ...
+
+#42 [ic-canister builder 2/5] RUN apt-get update && apt-get install -y     pkg-config     libssl-dev     && rm -rf /var/lib/apt/lists/*
+#42 59.85 Get:5 http://deb.debian.org/debian bookworm-updates/main arm64 Packages [512 B]
+#42 59.93 Get:6 http://deb.debian.org/debian-security bookworm-security/main arm64 Packages [253 kB]
+#42 60.95 Fetched 9200 kB in 1min 1s (152 kB/s)
+#42 60.95 Reading package lists...
+#42 61.24 Reading package lists...#42 ...
+
+#40 [node5 stage-1 2/6] RUN apt-get update && apt-get install -y --no-install-recommends     libssl-dev     ca-certificates &&     rm -rf /var/lib/apt/lists/*
+#40 60.76 debconf: delaying package configuration, since apt-utils is not installed
+#40 60.76 Fetched 2696 kB in 12s (230 kB/s)
+#40 60.77 Selecting previously unselected package openssl.
+#40 60.77 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 6665 files and directories currently installed.)
+#40 60.77 Preparing to unpack .../openssl_1.1.1w-0+deb11u2_arm64.deb ...
+#40 60.77 Unpacking openssl (1.1.1w-0+deb11u2) ...
+#40 60.83 Selecting previously unselected package ca-certificates.
+#40 60.83 Preparing to unpack .../ca-certificates_20210119_all.deb ...
+#40 60.83 Unpacking ca-certificates (20210119) ...
+#40 60.85 Selecting previously unselected package libssl-dev:arm64.
+#40 60.85 Preparing to unpack .../libssl-dev_1.1.1w-0+deb11u2_arm64.deb ...
+#40 60.85 Unpacking libssl-dev:arm64 (1.1.1w-0+deb11u2) ...
+#40 60.95 Setting up libssl-dev:arm64 (1.1.1w-0+deb11u2) ...
+#40 60.95 Setting up openssl (1.1.1w-0+deb11u2) ...
+#40 60.95 Setting up ca-certificates (20210119) ...
+#40 60.99 debconf: unable to initialize frontend: Dialog
+#40 60.99 debconf: (TERM is not set, so the dialog frontend is not usable.)
+#40 60.99 debconf: falling back to frontend: Readline
+#40 60.99 debconf: unable to initialize frontend: Readline
+#40 60.99 debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/aarch64-linux-gnu/perl/5.32.1 /usr/local/share/perl/5.32.1 /usr/lib/aarch64-linux-gnu/perl5/5.32 /usr/share/perl5 /usr/lib/aarch64-linux-gnu/perl-base /usr/lib/aarch64-linux-gnu/perl/5.32 /usr/share/perl/5.32 /usr/local/lib/site_perl) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+#40 60.99 debconf: falling back to frontend: Teletype
+#40 61.11 Updating certificates in /etc/ssl/certs...
+#40 61.29 129 added, 0 removed; done.
+#40 61.31 Processing triggers for ca-certificates (20210119) ...
+#40 61.31 Updating certificates in /etc/ssl/certs...
+#40 61.44 0 added, 0 removed; done.
+#40 61.44 Running hooks in /etc/ca-certificates/update.d...
+#40 61.44 done.
+#40 DONE 61.5s
+
+#42 [ic-canister builder 2/5] RUN apt-get update && apt-get install -y     pkg-config     libssl-dev     && rm -rf /var/lib/apt/lists/*
+#42 61.24 Reading package lists...
+#42 ...
+
+#44 [node6 stage-1 3/6] RUN useradd -m -u 1001 app
+#44 DONE 0.2s
+
+#45 [node9 stage-1 4/6] WORKDIR /app
+#45 DONE 0.0s
+
+#42 [ic-canister builder 2/5] RUN apt-get update && apt-get install -y     pkg-config     libssl-dev     && rm -rf /var/lib/apt/lists/*
+#42 61.54 Building dependency tree...
+#42 61.61 Reading state information...
+#42 61.68 The following additional packages will be installed:
+#42 61.68   libpkgconf3 libssl3 openssl pkgconf pkgconf-bin
+#42 61.68 Suggested packages:
+#42 61.68   libssl-doc
+#42 61.73 The following NEW packages will be installed:
+#42 61.73   libpkgconf3 libssl-dev pkg-config pkgconf pkgconf-bin
+#42 61.73 The following packages will be upgraded:
+#42 61.73   libssl3 openssl
+#42 62.09 2 upgraded, 5 newly installed, 0 to remove and 30 not upgraded.
+#42 62.09 Need to get 5615 kB of archives.
+#42 62.09 After this operation, 13.2 MB of additional disk space will be used.
+#42 62.09 Get:1 http://deb.debian.org/debian bookworm/main arm64 libpkgconf3 arm64 1.8.1-1 [35.3 kB]
+#42 62.26 Get:2 http://deb.debian.org/debian bookworm/main arm64 libssl3 arm64 3.0.15-1~deb12u1 [1811 kB]
+#42 69.23 Get:3 http://deb.debian.org/debian bookworm/main arm64 libssl-dev arm64 3.0.15-1~deb12u1 [2308 kB]
+#42 ...
+
+#28 [node6 builder  2/14] RUN apt-get update && apt-get install -y --no-install-recommends     build-essential     ca-certificates     cmake     git     libssl-dev     pkg-config &&     rm -rf /var/lib/apt/lists/*
+#28 61.03 Get:7 http://deb.debian.org/debian bookworm/main arm64 cmake arm64 3.25.1-1 [6806 kB]
+#28 72.40 debconf: delaying package configuration, since apt-utils is not installed
+#28 72.42 Fetched 9490 kB in 17s (569 kB/s)
+#28 72.43 Selecting previously unselected package build-essential.
+#28 72.43 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 23275 files and directories currently installed.)
+#28 72.48 Preparing to unpack .../0-build-essential_12.9_arm64.deb ...
+#28 72.48 Unpacking build-essential (12.9) ...
+#28 72.50 Selecting previously unselected package libarchive13:arm64.
+#28 72.50 Preparing to unpack .../1-libarchive13_3.6.2-1+deb12u2_arm64.deb ...
+#28 72.51 Unpacking libarchive13:arm64 (3.6.2-1+deb12u2) ...
+#28 72.53 Selecting previously unselected package libjsoncpp25:arm64.
+#28 72.54 Preparing to unpack .../2-libjsoncpp25_1.9.5-4_arm64.deb ...
+#28 72.54 Unpacking libjsoncpp25:arm64 (1.9.5-4) ...
+#28 72.55 Selecting previously unselected package librhash0:arm64.
+#28 72.55 Preparing to unpack .../3-librhash0_1.4.3-3_arm64.deb ...
+#28 72.55 Unpacking librhash0:arm64 (1.4.3-3) ...
+#28 72.57 Selecting previously unselected package libuv1:arm64.
+#28 72.57 Preparing to unpack .../4-libuv1_1.44.2-1+deb12u1_arm64.deb ...
+#28 72.57 Unpacking libuv1:arm64 (1.44.2-1+deb12u1) ...
+#28 72.60 Selecting previously unselected package cmake-data.
+#28 72.60 Preparing to unpack .../5-cmake-data_3.25.1-1_all.deb ...
+#28 72.60 Unpacking cmake-data (3.25.1-1) ...
+#28 72.79 Selecting previously unselected package cmake.
+#28 72.79 Preparing to unpack .../6-cmake_3.25.1-1_arm64.deb ...
+#28 72.79 Unpacking cmake (3.25.1-1) ...
+#28 73.14 Setting up libarchive13:arm64 (3.6.2-1+deb12u2) ...
+#28 73.14 Setting up libuv1:arm64 (1.44.2-1+deb12u1) ...
+#28 73.14 Setting up libjsoncpp25:arm64 (1.9.5-4) ...
+#28 73.15 Setting up librhash0:arm64 (1.4.3-3) ...
+#28 73.15 Setting up build-essential (12.9) ...
+#28 73.15 Setting up cmake-data (3.25.1-1) ...
+#28 73.16 Setting up cmake (3.25.1-1) ...
+#28 73.16 Processing triggers for libc-bin (2.36-9+deb12u10) ...
+#28 DONE 73.5s
+
+#46 [node4 builder  3/14] RUN useradd -m -u 1001 rust
+#46 DONE 0.2s
+
+#47 [node2 builder  4/14] WORKDIR /app
+#47 DONE 0.0s
+
+#48 [node1 builder  5/14] RUN chown rust:rust /app
+#48 DONE 0.1s
+
+#49 [node10 builder  6/14] RUN mkdir -p /home/rust/.cargo &&     chown -R rust:rust /home/rust/.cargo
+#49 DONE 0.1s
+
+#42 [ic-canister builder 2/5] RUN apt-get update && apt-get install -y     pkg-config     libssl-dev     && rm -rf /var/lib/apt/lists/*
+#42 73.81 Get:4 http://deb.debian.org/debian bookworm/main arm64 openssl arm64 3.0.15-1~deb12u1 [1392 kB]
+#42 ...
+
+#50 [node3 builder  7/14] COPY --chown=rust:rust Cargo.toml Cargo.lock ./
+#50 DONE 0.1s
+
+#51 [node9 builder  8/14] RUN mkdir -p src/bin &&     echo 'fn main() { println!("dummy"); }' > src/main.rs &&     echo 'fn main() { println!("dummy bin"); }' > src/bin/dummy.rs
+#51 DONE 0.1s
+
+#52 [node1 builder  9/14] RUN cargo build --release || true
+#52 0.145     Updating crates.io index
+#52 ...
+
+#42 [ic-canister builder 2/5] RUN apt-get update && apt-get install -y     pkg-config     libssl-dev     && rm -rf /var/lib/apt/lists/*
+#42 75.43 Get:5 http://deb.debian.org/debian bookworm/main arm64 pkgconf-bin arm64 1.8.1-1 [28.9 kB]
+#42 75.47 Get:6 http://deb.debian.org/debian bookworm/main arm64 pkgconf arm64 1.8.1-1 [25.9 kB]
+#42 75.52 Get:7 http://deb.debian.org/debian bookworm/main arm64 pkg-config arm64 1.8.1-1 [13.7 kB]
+#42 75.64 debconf: delaying package configuration, since apt-utils is not installed
+#42 75.65 Fetched 5615 kB in 14s (407 kB/s)
+#42 75.68 Selecting previously unselected package libpkgconf3:arm64.
+#42 75.68 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 9053 files and directories currently installed.)
+#42 75.69 Preparing to unpack .../0-libpkgconf3_1.8.1-1_arm64.deb ...
+#42 75.69 Unpacking libpkgconf3:arm64 (1.8.1-1) ...
+#42 75.71 Preparing to unpack .../1-libssl3_3.0.15-1~deb12u1_arm64.deb ...
+#42 75.72 Unpacking libssl3:arm64 (3.0.15-1~deb12u1) over (3.0.11-1~deb12u2) ...
+#42 75.85 Selecting previously unselected package libssl-dev:arm64.
+#42 75.85 Preparing to unpack .../2-libssl-dev_3.0.15-1~deb12u1_arm64.deb ...
+#42 75.86 Unpacking libssl-dev:arm64 (3.0.15-1~deb12u1) ...
+#42 75.98 Preparing to unpack .../3-openssl_3.0.15-1~deb12u1_arm64.deb ...
+#42 75.98 Unpacking openssl (3.0.15-1~deb12u1) over (3.0.11-1~deb12u2) ...
+#42 76.05 Selecting previously unselected package pkgconf-bin.
+#42 76.05 Preparing to unpack .../4-pkgconf-bin_1.8.1-1_arm64.deb ...
+#42 76.05 Unpacking pkgconf-bin (1.8.1-1) ...
+#42 76.06 Selecting previously unselected package pkgconf:arm64.
+#42 76.06 Preparing to unpack .../5-pkgconf_1.8.1-1_arm64.deb ...
+#42 76.07 Unpacking pkgconf:arm64 (1.8.1-1) ...
+#42 76.08 Selecting previously unselected package pkg-config:arm64.
+#42 76.08 Preparing to unpack .../6-pkg-config_1.8.1-1_arm64.deb ...
+#42 76.08 Unpacking pkg-config:arm64 (1.8.1-1) ...
+#42 76.09 Setting up libssl3:arm64 (3.0.15-1~deb12u1) ...
+#42 76.09 Setting up libpkgconf3:arm64 (1.8.1-1) ...
+#42 76.10 Setting up libssl-dev:arm64 (3.0.15-1~deb12u1) ...
+#42 76.10 Setting up pkgconf-bin (1.8.1-1) ...
+#42 76.10 Setting up openssl (3.0.15-1~deb12u1) ...
+#42 76.11 Setting up pkgconf:arm64 (1.8.1-1) ...
+#42 76.11 Setting up pkg-config:arm64 (1.8.1-1) ...
+#42 76.12 Processing triggers for libc-bin (2.36-9+deb12u4) ...
+#42 DONE 76.2s
+
+#53 [ic-canister builder 3/5] WORKDIR /app
+#53 DONE 0.0s
+
+#54 [ic-canister builder 4/5] COPY . .
+#54 DONE 3.6s
+
+#52 [node1 builder  9/14] RUN cargo build --release || true
+#52 ...
+
+#55 [ic-canister builder 5/5] RUN cargo build --release
+#55 0.201 error: failed to parse lock file at: /app/Cargo.lock
+#55 0.201 
+#55 0.201 Caused by:
+#55 0.201   lock file version `4` was found, but this version of Cargo does not understand this lock file, perhaps Cargo needs to be updated?
+#55 ERROR: process "/bin/sh -c cargo build --release" did not complete successfully: exit code: 101
+
+#52 [node3 builder  9/14] RUN cargo build --release || true
+#52 CANCELED
+------
+ > [ic-canister builder 5/5] RUN cargo build --release:
+0.201 error: failed to parse lock file at: /app/Cargo.lock
+0.201 
+0.201 Caused by:
+0.201   lock file version `4` was found, but this version of Cargo does not understand this lock file, perhaps Cargo needs to be updated?
+------

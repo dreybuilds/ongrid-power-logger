@@ -1,0 +1,73 @@
+devices:
+- id: SG1005KE02
+  peer_id: 12D3KooWCFeuF1fFbh7wMp4ardGg6tUszVU4VyYjMeJ16Awg6t1s
+  node_name: LuxorDarwin
+  node_creation_number: 1749376678
+  device_type: Solar Generator
+  contract_address: '0x0000000000000000000000000000000000000000'
+  wallet_address: '0x89d67ebA25Ca23d6CCCd97935245d689A3354d71'
+  location:
+    latitude: 37.5665
+    longitude: 126.978
+    altitude: 0
+    accuracy: 5
+    satellites: 8
+    timestamp: 1749376625
+    country:
+      code: KE
+      name: Kenya
+      region: Africa
+  specifications:
+    max_wattage: 1200
+    voltage_range: 220-240
+    frequency_range: 50
+    battery_capacity: 12000
+    phase_type: single
+- id: SG1005KE02
+  peer_id: 12D3KooWN7XtcfjCtJuYr8jtVWuL4RMqE416qB8fTXMawzQXwCXs
+  node_name: ElephantByzantium
+  node_creation_number: 1749376867
+  device_type: Solar Generator
+  contract_address: '0x0000000000000000000000000000000000000000'
+  wallet_address: '0xE1b5104916a04DDE0EBcF8d2650F436b7EBa06be'
+  location:
+    latitude: 37.5665
+    longitude: 126.978
+    altitude: 0
+    accuracy: 5
+    satellites: 8
+    timestamp: 1749376817
+    country:
+      code: KE
+      name: Kenya
+      region: Africa
+  specifications:
+    max_wattage: 1200
+    voltage_range: 220-240
+    frequency_range: 50
+    battery_capacity: 12000
+    phase_type: single
+- id: SG1005KE02
+  peer_id: 12D3KooWDZMSEHDLHwM25sngzdQFZ5ygroFAUhLPzkbvRLgDZYKk
+  node_name: GorillaKnossos
+  node_creation_number: 1749374057
+  device_type: Solar Generator
+  contract_address: '0x0000000000000000000000000000000000000000'
+  wallet_address: '0x6059DeD37660AC56972B89a9A3c8515f77764737'
+  location:
+    latitude: 37.5665
+    longitude: 126.978
+    altitude: 0
+    accuracy: 5
+    satellites: 8
+    timestamp: 1749374004
+    country:
+      code: KE
+      name: Kenya
+      region: Africa
+  specifications:
+    max_wattage: 1200
+    voltage_range: 220-240
+    frequency_range: 50
+    battery_capacity: 12000
+    phase_type: single
